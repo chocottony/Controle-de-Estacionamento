@@ -1,62 +1,63 @@
-# Controle-de-Estacionamento
-# 🧮 Calculadora de Vetores
+# 🅿️ Controle de Estacionamento
 
-Uma calculadora de geometria vetorial desenvolvida em C++ que realiza operações matemáticas com vetores.
+Um sistema de gerenciamento de estacionamento desenvolvido em C++ que controla entrada, saída e cobrança de veículos.
 
 ## 📋 Funcionalidades
 
-- **Soma de Vetores** - Adiciona dois vetores
-- **Diferença de Vetores** - Subtrai um vetor de outro
-- **Multiplicação por Escalar** - Multiplica um vetor por um número real
-- **Norma de um Vetor** - Calcula o comprimento/magnitude do vetor
-- **Produto Escalar** - Calcula o produto escalar entre dois vetores
-- **Ângulo entre Vetores** - Determina o ângulo entre dois vetores em graus
+- **Registro de Cliente** - Registra a entrada de um veículo com placa e horário
+- **Registro de Saída** - Registra a saída de um veículo e calcula o valor a pagar
+- **Cálculo de Tarifa** - Calcula automaticamente o tempo de permanência e valor cobrado
+- **Histórico** - Mantém registro de todos os veículos do dia
+- **Relatório Final** - Finaliza o dia exibindo total arrecadado
 
 ## 🚀 Como Compilar e Executar
 
-1. Certifique-se de ter um compilador C++ instalado (como g++ ou MinGW)
+1. Certifique-se de ter um compilador C++ instalado
 2. Compile o programa:
    ```bash
-   g++ "Calculadora de vetores.cpp" -o calculadora
+   g++ "Controle de Estacionamento.cpp" -o estacionamento
    ```
 3. Execute o programa:
    ```bash
-   ./calculadora
+   ./estacionamento
    ```
 
 ## 📖 Como Usar
 
-1. O programa exibirá um menu com as operações disponíveis
-2. Digite o número da operação desejada
-3. Informe o tamanho dos vetores
-4. Digite os componentes dos vetores
-5. O resultado será exibido na tela
-6. Digite 0 para finalizar o programa
+1. O programa solicitará a data de hoje (dd mm aaaa)
+2. Informe o valor da hora do estacionamento em reais
+3. Escolha uma opção no menu:
+   - **Opção 1**: Registrar entrada de um veículo (informe a placa e horário)
+   - **Opção 2**: Registrar saída de um veículo (informe a placa e horário)
+   - **Opção 3**: Finalizar o dia (exibe total arrecadado)
 
-**Exemplo:**
+**Exemplo de uso:**
 ```
-GEOMETRIA VETORIAL
-1 - Soma de Vetores
-2 - Diferença de Vetores
-...
-Escolha a sua opção: 1
-Informe o tamanho dos vetores: 3
-Digite o vetor 1:
-1 2 3
-Digite o vetor 2:
-4 5 6
+Informe a data de hoje (dd mm aaaa): 14 11 2025
+Qual o valor da hora do estacionamento: R$15.00
+
+======== Menu ========
+1 - Registro de cliente
+2 - Registro de saída
+3 - Finalizar dia
+Opção desejada: 1
+
+Placa do carro: ABC1234
+Hora de entrada (hh mm): 10 30
 ```
 
 ## 🛠️ Tecnologias
 
 - C++
-- Biblioteca padrão C (stdio.h, math.h, locale.h)
+- Vector (para armazenamento dinâmico de dados)
+- Structs (para organização de dados)
 
-## 👥 Autores
+## 💰 Características
 
-- Beatriz Souza - 202408800
-- Antonio Garcia - 202408633
-- Lonardo Camargo - 202510184
+- Cálculo automático de tarifa por minuto
+- Validação de horários
+- Registro detalhado de cada veículo
+- Suporte a múltiplos veículos por dia
 
 ## 📝 Licença
 
@@ -64,4 +65,4 @@ Este projeto é de código aberto.
 
 ---
 
-*Projeto desenvolvido para a disciplina de Geometria Vetorial* 📐
+*Projeto desenvolvido para gerenciamento de estacionamentos* 🚗
